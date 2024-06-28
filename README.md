@@ -1,40 +1,93 @@
+Student Attendance Tracking Application
+This project is a beginner-friendly, from-scratch build of a student attendance tracking application. It offers a comprehensive suite of features for managing and analyzing student attendance data with an intuitive and user-friendly interface.
 
-![Student Attendance Tracking Banner](https://github.com/rrs301/Student-Attendance-Tracking/assets/20216436/28df9edf-a5e8-4df4-a6a5-243b43c75225)
+Features
+Dashboard:
+Displays analytics and status of student attendance.
+Shows total students registered for a standard and month.
+Presents data on total students present and absent in percentage form.
+Allows selection of different dates and months, updating the graph accordingly.
+Uses bar charts, donut charts, and pie charts to visualize attendance data.
+Allows hovering to see detailed statistics for each day.
+Automatically updates layout based on selected class or grade.
 
+Student Management:
+Add new students with their information, including the grade.
+Integrated grid view with pagination.
+Search functionality across all columns.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Attendance Tracking:
+Search and display attendance for a specific month and grade.
+Tracks attendance daily with columns for each day of the month.
+Mark students as present or absent, with real-time updates and toast messages.
+Stores attendance data in the database.
+Easily switch between months and grades.
 
-## Getting Started
+Authentication:
+Includes social and username/password authentication.
+Uses authentication services for secure login.
 
-First, run the development server:
+Technology Stack
+Frontend: React, Next.js, Tailwind CSS
+Backend: Node.js
+Database: MySQL
+ORM: Drizzle ORM
+Authentication: Auth0 or similar services
 
-```bash
+Installation
+Prerequisites
+Node.js and npm installed
+MySQL database setup
+Steps
+Clone the repository
+
+Copy code
+git clone https://github.com/yourusername/student-attendance-tracker.git
+cd student-attendance-tracker
+Install dependencies
+
+Copy code
+npm install
+Setup environment variables
+
+Create a .env file in the root directory and add your MySQL and authentication service credentials.
+env
+Copy code
+DATABASE_URL=mysql://user:password@localhost:3306/database
+AUTH0_DOMAIN=your-auth0-domain
+AUTH0_CLIENT_ID=your-auth0-client-id
+AUTH0_CLIENT_SECRET=your-auth0-client-secret
+Run database migrations
+
+bash
+Copy code
+npx drizzle-orm migrate
+Start the development server
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open the application in your browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Usage
+Dashboard: View overall attendance statistics.
+Students: Add new students and manage existing ones.
+Attendance: Mark daily attendance for students.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Learning Resources
 
-## Learn More
+Contributing
+Fork the repository
+Create your feature branch (git checkout -b feature/fooBar)
+Commit your changes (git commit -am 'Add some fooBar')
+Push to the branch (git push origin feature/fooBar)
+Create a new Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acknowledgments
+Special thanks to the open-source community for their invaluable tools and libraries.
+Inspired by real-world attendance tracking systems and educational tools.
