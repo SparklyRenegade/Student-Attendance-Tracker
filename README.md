@@ -43,7 +43,7 @@ Steps
 Clone the repository
 
 Copy code
-git clone https://github.com/yourusername/student-attendance-tracker.git
+git clone https://github.com/SparklyRenegade/Student-Attendance-Tracker.git
 cd student-attendance-tracker
 Install dependencies
 
