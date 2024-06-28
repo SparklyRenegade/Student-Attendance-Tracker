@@ -1,4 +1,5 @@
-Student Attendance Tracking Application
+                                            Student Attendance Tracking Application
+
 This project is a beginner-friendly, from-scratch build of a student attendance tracking application. It offers a comprehensive suite of features for managing and analyzing student attendance data with an intuitive and user-friendly interface.
 
 Features
